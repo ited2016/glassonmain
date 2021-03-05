@@ -1,3 +1,9 @@
+window.addEventListener("scroll",function(){
+  var header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0 );
+})
+
+
 // Get all of the images that are marked up to fade in
 const images = document.querySelectorAll('.js-lazyload-image');
 
